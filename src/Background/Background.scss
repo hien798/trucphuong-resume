@@ -1,0 +1,33 @@
+$coral: #000000;
+$break: 768px;
+
+.background {
+  margin: calc(200px - 8vw) 30px 30px;
+  width: calc(75vw - 260px);
+  @media all and (max-width: $break) {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-list {
+    .ant-list-item-meta-content {
+      flex: auto;
+
+      h4 {
+        white-space: pre-wrap;
+        color: $coral;
+        font-weight: bold;
+      }
+    }
+
+    .ant-list-item-content {
+      display: block;
+
+      i {
+        color: $coral;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}
